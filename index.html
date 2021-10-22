@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<br/>
+<br/>
+<title>Audio-Visual SR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+<!-- jQuery -->
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!-- Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="http://people.eecs.berkeley.edu/~shiry/styles/main.css"/>
+</head>
+<body>
+
+<div class="container">
+<div class="row">
+	<div class="col-md-12">
+		<div class="page-header">
+			<h1 class="text-center"><b>Audio-Visual Speech Super-Resolution</b></h1>
+		</div>
+	</div>
+</div>
+<br>
+<div class="row"> <!-- names row-->
+		<div class="col-md-2">
+			<h5 class="text-center"><a href=""></a></h5>
+		</div>
+		<div class="col-md-2">
+			<h5 class="text-center"><a href="https://rudrabha.github.io/">Rudrabha Mukhopadhyay*</a></h5>
+		</div>
+		<div class="col-md-2">
+			<h5 class="text-center"><a href="">Sindhu Hegde*</a></h5>
+		</div>
+		<div class="col-md-2">
+			<h5 class="text-center"><a href="https://www.cse.iitk.ac.in/users/vinaypn/">Vinay Namboodiri</a></h5>
+		</div>
+		<div class="col-md-2">
+			<h5 class="text-center"><a href="https://faculty.iiit.ac.in/~jawahar/">C.V. Jawahar</a></h5>
+		</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-md-3">
+	</div>
+	<div class="col-md-2">
+		<h5 class="text-right">IIIT Hyderabad</h5>
+	</div>
+	<div class="col-md-2">
+		<h5 class="text-center"></h5>
+	</div>
+	<div class="col-md-2">
+		<h5 class="text-left">Univ. of Bath</h5>
+	</div>
+	<div class="col-md-3">
+	</div>
+</div>
+
+<br>
+<div class="row">
+	<div class="col-md-12">
+		<h5 class="text-center">BMVC, 2021 (Oral)</h5>
+	</div>
+<div>
+<br>
+<div class="row">
+	<!<div class="col-md-1">
+		<h3 class="text-center">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h3>
+	<!</div>
+	<!<div class="col-md-1">
+		<h3 class="text-center">&nbsp; &nbsp;  &nbsp; &nbsp; </h3>
+	<!</div>
+		<!<div class="col-md-1">
+		<h3 class="text-center">&nbsp; &nbsp;  &nbsp; &nbsp; </h3>
+	<!</div>
+		<!<div class="col-md-1">
+		<h3 class="text-center">&nbsp; &nbsp;  &nbsp; &nbsp; </h3>
+	<!</div>
+		<!<div class="col-md-1">
+		<h3 class="text-center">&nbsp; &nbsp;  &nbsp; &nbsp; </h3>
+	<!</div>
+		<!<div class="col-md-1">
+		<h3 class="text-center">&nbsp; &nbsp;  &nbsp; &nbsp; </h3>
+	<!</div>
+	<div class="col-md-1">
+		<h3 class="text-center"><a href=#>[Code]</a></h3>
+	</div>
+	<!<div class="col-md-1">
+		<h3 class="text-center">&nbsp; &nbsp; | &nbsp; &nbsp; </h3>
+	<!</div>
+<!-- 		<!<div class="col-md-1">
+		<h3 class="text-center"><a href="https://bhaasha.iiit.ac.in/lipsync/">[Interactive Demo]</a></h3>
+	<!</div> -->
+<!-- 	<!<div class="col-md-1">
+		<h3 class="text-center">&nbsp; &nbsp; | &nbsp; &nbsp; </h3>
+	<!</div> -->
+		<h3 class="text-center"><a href=#>[Demo Video]</a></h3>
+	<!</div>
+<!-- 	<!<div class="col-md-1">
+		<h3 class="text-center">&nbsp; &nbsp; | &nbsp; &nbsp; </h3>
+	<!</div> -->
+<!-- 	<!<div class="col-md-1">
+		<h3 class="text-center"><a href="#">[ReSyncED]</a></h3>
+	<!</div> -->
+	<div class="col-md-5">
+	</div>
+<div>
+
+<div class="row">
+	<div class="col-md-1">
+		<!--left margin column-->
+	</div>
+
+	<div class="col-md-10 text-center"> <!--main content column-->
+
+	<p>
+	    <figure class="figure">
+	      <img src="images/banner_style3.png" class="img-fluid mx-auto" alt="XXX">
+	      <figcaption class="figure-caption">We present an audio-visual model for super-resolving very low-resolution speech inputs (example, 1kHz) at large scale-factors. In contrast to the existing audio-only speech super-resolution approaches, our method benefits from the visual stream, either the real-visual stream (if available), or the generated visual stream from our pseudo-visual network.
+	      </figcaption>
+	    </figure>
+	</p>
+
+	<br>
+    <h2>Abstract</h2>
+     <br>
+    <p class="text-justify">
+  In this paper, we present an audio-visual model to perform speech super-resolution at large scale-factors (8x and 16x). Previous works attempted to solve this problem using only the audio modality as input and thus were limited to low scale-factors of $2\times$ and $4\times$. In contrast, we propose to incorporate both visual and auditory signals to super-resolve speech of sampling rates as low as $1$kHz. In such challenging situations, the visual features assist in learning the content and improves the quality of the generated speech. Further, we demonstrate the applicability of our approach to arbitrary speech signals where the visual stream is not accessible. Our ``pseudo-visual network'' precisely synthesizes the visual stream solely from the low-resolution speech input. Extensive experiments and the demo video illustrate our method's remarkable results and benefits over state-of-the-art audio-only speech super-resolution approaches.
+    </p>
+
+	<br>
+ 	<hr>
+ 	<br>
+
+ <h2>Paper</h2>
+  <br>
+    <ul class="media-list, citations">
+    <li class="media" id="gestures">
+        <a class="pull-left" href="#">
+            <img class="media-object img-fluid img-thumbnail mr-4" src="images/paper.png" alt="Speech2Lip Paper" width="150">
+        </a>
+        <div class="media-body">
+            <h5 class="media-heading text-left">Audio-Visual Speech Super-Resolution</h5>
+            <p class="text-left">
+              Rudrabha Mukhopadhyay*, Sindhu Hegde*, Vinay Namboodiri and C.V. Jawahar
+              <br>
+              <span class="cite-title">Audio-Visual Speech Super-Resolution</span>,
+              BMVC, 2021 (Oral).
+              <br>
+              <a href="pdf/paper.pdf">[PDF]</a> | <a href="#gestures" role="button" data-toggle="collapse" data-target="#collapse-gestures" aria-expanded="false" aria-controls="collapse">[BibTeX]</a>
+              <div class="collapse" id="collapse-gestures">
+              <div class="card text-left bg-light mb-4">
+<!-- 				@misc{prajwal2020lip,
+					<br>
+					title={A Lip Sync Expert Is All You Need for Speech to Lip Generation In The Wild},
+					<br>
+					author={K R Prajwal and Rudrabha Mukhopadhyay and Vinay Namboodiri and C V Jawahar},
+					<br>
+					year={2020},
+					<br>
+					eprint={2008.10010},
+					<br>
+					archivePrefix={arXiv},
+					<br>
+					primaryClass={cs.CV}
+					<br>
+				} -->
+              </div>
+              </div>
+            </p>
+        </div>
+    </li>
+  </ul>
+
+    <br>
+ 	<hr>
+ 	<br>
+
+ 	<h2>Demo</h2>
+ 	<br>
+<!--  	<iframe width="560" height="315" src="https://www.youtube.com/embed/0fXaDCZNOJc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+ 	<br>
+ 	Coming Soon
+ 	</a>
+
+
+
+<!--  	<hr>
+ 	<br>
+     <h2>Architecture</h2>
+     <br>
+    <figure class="figure">
+      <img src="images/architecture_final.png" class="img-fluid mx-auto" alt="XXX" width="900" height="1100">
+      <figcaption class="figure-caption">Architecture for generating speech from lip movements</figcaption>
+    </figure>
+    <p class="text-justify">
+	Our approach generates accurate lip-sync by learning from an "already well-trained lip-sync expert". Unlike previous works that employ only a reconstruction loss or train a discriminator in a GAN setup, we use a pre-trained discriminator that is already quite accurate at detecting lip-sync errors. We show that fine-tuning it further on the noisy generated faces hampers the discriminator's ability to measure lip-sync, thus also affecting the generated lip shapes. Thus, we use a pre-trained lipsync expert which is highly powerful in judging in-sync and out-of-sync lip shapes given an audio segment. We also use a visual quality discriminator to improve the visual quality of the final output.
+    </p>
+    <br>
+    <br> -->
+
+<!--     <hr>
+ 	<br>
+     <h2>Ethical Use</h2>
+     <br>
+    <p class="text-justify">
+	To ensure fair use, we strongly require that any result created using this our algorithm must unambiguously present itself as synthetic and that it is generated using the Wav2Lip model. In addition, to the strong positive applications of this work, our intention to completely open-source our work is that it can simultaneously also encourage efforts in detecting manipulated video content and their misuse. We believe that Wav2Lip can enable several positive applications and also encourage productive discussions and research efforts regarding fair use of synthetic content.
+    </p>
+    <br>
+    <br> -->
+
+    <hr>
+    <br>
+     <h2>Contact</h2>
+     <br>
+      <ul>
+        <li>Sindhu Hegde - sindhu.hegde@research.iiit.ac.in</li>
+        <li>Rudrabha Mukhopadhyay - radrabha.m@research.iiit.ac.in</li>
+      </ul> 
+
+    </div>
+   	 
+
+    <br>
+ 	<hr>
+ 	<br>
+
+
+	</div> <!-- close middle column -->
+	<div class="col-md-1">
+	<!-- empty room saver on right -->
+	</div>
+</div> <!-- close main row -->
+</div> <!-- close body container --> 
+<footer>
+  <br/>
+  <br/>
+</footer>
+</div>
+</body>
+</html>
+ 
